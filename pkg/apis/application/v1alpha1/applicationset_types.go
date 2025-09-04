@@ -214,7 +214,7 @@ type ApplicationSetNestedGenerator struct {
 	SCMProvider             *SCMProviderGenerator    `json:"scmProvider,omitempty" protobuf:"bytes,4,name=scmProvider"`
 	ClusterDecisionResource *DuckTypeGenerator       `json:"clusterDecisionResource,omitempty" protobuf:"bytes,5,name=clusterDecisionResource"`
 	PullRequest             *PullRequestGenerator    `json:"pullRequest,omitempty" protobuf:"bytes,6,name=pullRequest"`
-	ClusterProfiles         *ClusterProfileGenerator `json:"clusterProfiles,omitempty" protobuf:"bytes,2,name=clusterProfiles"`
+	ClusterProfiles         *ClusterProfileGenerator `json:"clusterProfiles,omitempty" protobuf:"bytes,7,name=clusterProfiles"`
 
 	// Matrix should have the form of NestedMatrixGenerator
 	Matrix *apiextensionsv1.JSON `json:"matrix,omitempty" protobuf:"bytes,7,name=matrix"`
@@ -245,7 +245,7 @@ type ApplicationSetTerminalGenerator struct {
 	ClusterProfiles         *ClusterProfileGenerator `json:"clusterProfiles,omitempty" protobuf:"bytes,8,name=clusterProfiles"`
 
 	// Selector allows to post-filter all generator.
-	Selector *metav1.LabelSelector `json:"selector,omitempty" protobuf:"bytes,8,name=selector"`
+	Selector *metav1.LabelSelector `json:"selector,omitempty" protobuf:"bytes,9,name=selector"`
 }
 
 type ApplicationSetTerminalGenerators []ApplicationSetTerminalGenerator
