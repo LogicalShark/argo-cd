@@ -29,6 +29,7 @@ rules:
       - get
       - list
       - watch
+      - delete
   - apiGroups:
       - argoproj.io
     resources:
@@ -56,6 +57,7 @@ rules:
       - get
       - list
       - watch
+      - delete
   # argocd-applicationset-controller leader election rules
   # Create with resourceNames fails, so use a separate rule for the lease creation
   - apiGroups:
