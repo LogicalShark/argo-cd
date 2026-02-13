@@ -11,8 +11,8 @@ patches:
 
 images:
 - name: quay.io/argoproj/argocd
-  newName: quay.io/argoproj/argocd
-  newTag: latest
+  newName: us-central1-docker.pkg.dev/maralder-anthos-dev/argocd-repo/argocd
+  newTag: my-dev-v1
 resources:
 - ../../base/application-controller
 - ../../base/applicationset-controller
